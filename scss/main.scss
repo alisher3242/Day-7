@@ -3,3 +3,74 @@
 @import "fonts";
 @import "general";
 @import "blocks/blocks";
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box__title--hedding{
+    color: white;
+}
+
+.box__title--text{
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 1100px) {
+    .box__image{
+        border-radius: 25px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box__title--hedding{
+        font-size: 1.8rem;
+    }
+
+    .box__title--text{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .box{
+        flex-direction: column-reverse;
+    }
+
+    .box__image{
+        border-radius: 25px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .box__title--hedding{
+        font-size: 1.4rem;
+    }
+
+    .box__title--text{
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .box__image{
+        display: none;
+    }
+
+    .box__title--hedding{
+        font-size: 1rem;
+    }
+
+    .box__title--text{
+        font-size: 0.5rem;
+    }
+}
